@@ -52,7 +52,8 @@
                 android:padding="4dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/btn_selector">
+                android:background="@drawable/btn_selector"
+                android:onClick="onClick">
 
                 <FrameLayout
                     android:layout_width="160dp"
@@ -85,7 +86,8 @@
                 android:padding="4dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/btn_selector">
+                android:background="@drawable/btn_selector"
+                android:onClick="onClick">
 
                 <FrameLayout
                     android:layout_width="160dp"
@@ -126,7 +128,8 @@
                 android:padding="4dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/btn_selector">
+                android:background="@drawable/btn_selector"
+                android:onClick="onClick">
 
                 <FrameLayout
                     android:layout_width="160dp"
@@ -159,7 +162,8 @@
                 android:padding="4dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/btn_selector">
+                android:background="@drawable/btn_selector"
+                android:onClick="onClick">
 
                 <FrameLayout
                     android:layout_width="160dp"

@@ -1,6 +1,8 @@
 package com.example.assignmentone;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,19 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    // xml android:onClick="onClick"
+    public void onClick(View v){
+        int id = v.getId();
+        if(id == R.id.ll_facilities){
+            Toast.makeText(this,"Facilities clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.ll_events){
+            Toast.makeText(this,"Events clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.ll_clubs){
+            Toast.makeText(this,"Clubs clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.ll_support){
+            Toast.makeText(this,"Support clicked", Toast.LENGTH_SHORT).show();
+        }
     }
 }
