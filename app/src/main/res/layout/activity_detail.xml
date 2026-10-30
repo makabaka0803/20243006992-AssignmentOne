@@ -5,54 +5,68 @@
     android:orientation="vertical"
     android:id="@+id/main">
 
-    <!-- Header: icon + title side by side (match figure5) -->
-    <LinearLayout
+    <!-- Top banner background -->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="16dp">
+        android:layout_height="250dp">
 
         <ImageView
-            android:id="@+id/detail_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_main_banner"
+            android:scaleType="centerCrop"
+            android:contentDescription="campus banner"/>
+
+        <!-- Icon + short title on banner, enlarged icon and text -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="topic icon"
-            android:scaleType="fitCenter"/>
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-        <TextView
-            android:id="@+id/detail_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="32sp"/>
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/detail_icon"
+                android:layout_width="210dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="category icon"/>
 
-    <!-- Divider line -->
+            <TextView
+                android:id="@+id/short_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Divider -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#cccccc"/>
 
-    <!-- Sub title -->
+    <!-- This is title position: long title -->
     <TextView
-        android:id="@+id/detail_sub_title"
+        android:id="@+id/long_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:text="This is a title"
         android:textSize="18sp"
         android:gravity="center_horizontal"/>
 
-    <!-- Content text -->
+    <!-- Scrollable content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
-            android:id="@+id/detail_content"
+            android:id="@+id/content_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="This is content"
             android:textSize="16sp"/>
     </ScrollView>
 
