@@ -26,14 +26,14 @@
             android:textSize="40sp"
             android:padding="16dp"/>
     </FrameLayout>
-
-    <!-- Bottom 2x2 icon and text area -->
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:background="@color/green">
 
         <!-- First row: Facilities and Events -->
         <LinearLayout
@@ -51,12 +51,12 @@
                 android:orientation="vertical"
                 android:padding="4dp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                android:background="@drawable/btn_selector">
 
                 <FrameLayout
                     android:layout_width="160dp"
-                    android:layout_height="135dp"
-                    android:background="@drawable/btn_selector">
+                    android:layout_height="135dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Facilities"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
@@ -84,12 +84,12 @@
                 android:orientation="vertical"
                 android:padding="4dp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                android:background="@drawable/btn_selector">
 
                 <FrameLayout
                     android:layout_width="160dp"
-                    android:layout_height="135dp"
-                    android:background="@drawable/btn_selector">
+                    android:layout_height="135dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Events"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
@@ -125,12 +125,12 @@
                 android:orientation="vertical"
                 android:padding="4dp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                android:background="@drawable/btn_selector">
 
                 <FrameLayout
                     android:layout_width="160dp"
-                    android:layout_height="135dp"
-                    android:background="@drawable/btn_selector">
+                    android:layout_height="135dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -144,7 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Clubs"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
@@ -158,12 +158,12 @@
                 android:orientation="vertical"
                 android:padding="4dp"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                android:background="@drawable/btn_selector">
 
                 <FrameLayout
                     android:layout_width="160dp"
-                    android:layout_height="135dp"
-                    android:background="@drawable/btn_selector">
+                    android:layout_height="135dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -177,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Support"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
