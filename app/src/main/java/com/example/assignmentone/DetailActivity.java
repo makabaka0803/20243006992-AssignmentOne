@@ -1,6 +1,7 @@
 package com.example.assignmentone;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,9 @@ public class DetailActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Get the index value passed from MainActivity
+        int index = getIntent().getIntExtra("index", -1);
+        Log.d("DETAIL_INDEX", "Received index = " + index);
     }
 }

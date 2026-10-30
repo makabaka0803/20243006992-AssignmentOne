@@ -1,5 +1,6 @@
 package com.example.assignmentone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -27,14 +28,21 @@ public class MainActivity extends AppCompatActivity {
     // xml android:onClick="onClick"
     public void onClick(View v){
         int id = v.getId();
+        Intent intent = new Intent(this, DetailActivity.class);
+
         if(id == R.id.ll_facilities){
             Toast.makeText(this,"Facilities clicked", Toast.LENGTH_SHORT).show();
+            intent.putExtra("index",0);
         }else if(id == R.id.ll_events){
             Toast.makeText(this,"Events clicked", Toast.LENGTH_SHORT).show();
+            intent.putExtra("index",1);
         }else if(id == R.id.ll_clubs){
             Toast.makeText(this,"Clubs clicked", Toast.LENGTH_SHORT).show();
+            intent.putExtra("index",2);
         }else if(id == R.id.ll_support){
             Toast.makeText(this,"Support clicked", Toast.LENGTH_SHORT).show();
+            intent.putExtra("index",3);
         }
+        startActivity(intent);
     }
 }
